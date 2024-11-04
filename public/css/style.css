@@ -1,0 +1,171 @@
+/*********  utils  ********/
+
+:root {
+    --hd-color:#13183F;
+    --txt-color:#83869A;
+}
+
+/*****  fonts  ******/
+
+* {
+    font-family: 'Plus Jakarta sans' ,sans-serif;
+}
+
+
+h1 {
+    color: var(--hd-color);
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+
+
+
+p {
+    color: var(--txt-color);
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 26px;
+
+}
+
+/*******  components  ******/
+
+.btn-1 {
+    width: 140px;
+    height: 48px;
+    border-radius: 28px;
+    background-color: var(--hd-color);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    border: 0;
+}
+
+.btn-2 {
+    width: 167px;
+    height: 56px;
+    border-radius: 32px;
+    background: linear-gradient(#F02AA6,#FF6F48);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 26px;
+    border: 0;
+    cursor: pointer;
+}
+
+/*******  body  *******/
+
+body {
+    margin: 0;
+}
+
+/*******  header-section  *******/
+
+.nav-bar {
+    margin: 16px 16px 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-header {
+    font-size: 111px;
+    height: 27px;
+}
+
+/********  hero-section  *******/
+
+.hero-container {
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-body {
+    width: 100%;
+}
+
+.hero-body p {
+    font-size: 1rem;
+}
+
+.hero-image-1{ display: block;}
+.hero-image-2{display: none;}
+   
+    
+
+
+
+
+/********  media-query  *********/
+
+@media screen and (min-width:600px) {
+
+    h1 {
+        font-size: 3.5rem;
+        margin-bottom:29px ;
+    }
+
+    p {
+        font-size: 1.125rem;
+    }
+
+    /***  body  ***/
+    .main-container {
+        
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .overflow-wrapper {
+        overflow-x: hidden;
+    }
+
+    body {
+        margin: 0;
+        
+    }
+
+    /***  header  ****/
+
+    .nav-bar {
+        margin:24px 165px 0px 165px;
+        display: flex;
+    }
+
+    /******  hero-section  ******/
+
+    .hero-container {
+        
+        margin: 0px 165px 0px 165px ;
+        display: flex;
+        flex-direction: row;
+    }
+   
+    .hero-body {
+        width: 50%;
+    }
+
+    .hero-body p {
+        width: 70%;
+    }
+
+    .hero-image-1 {
+         display: none;
+        
+        }
+
+    .hero-image-2{
+        position: absolute;
+        z-index: -1;
+        bottom: 150px;
+        left: 50px;
+        
+        display: block;
+    }
+
+}
