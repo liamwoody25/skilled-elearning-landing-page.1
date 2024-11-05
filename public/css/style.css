@@ -41,6 +41,15 @@ p {
     font-weight: 700;
     line-height: 28px;
     border: 0;
+    cursor: pointer;
+}
+
+.btn-1:hover {
+    background-color: #666CA3;
+}
+
+.btn-2:hover {
+    opacity: 0.5;
 }
 
 .btn-2 {
@@ -100,6 +109,9 @@ body {
 
 
 
+
+
+
 /********  media-query  *********/
 
 @media screen and (min-width:600px) {
@@ -114,20 +126,13 @@ body {
     }
 
     /***  body  ***/
-    .main-container {
-        
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     .overflow-wrapper {
+        position: relative;
         overflow-x: hidden;
     }
 
     body {
         margin: 0;
-        
     }
 
     /***  header  ****/
@@ -140,8 +145,7 @@ body {
     /******  hero-section  ******/
 
     .hero-container {
-        
-        margin: 0px 165px 0px 165px ;
+        margin: 185px 165px 0px 165px ;
         display: flex;
         flex-direction: row;
     }
@@ -150,21 +154,22 @@ body {
         width: 50%;
     }
 
+
     .hero-body p {
-        width: 70%;
+        width: 66%;
     }
 
     .hero-image-1 {
          display: none;
-        
-        }
+    }
 
-    .hero-image-2{
-        position: absolute;
+    .hero-image-2{position: relative;
+        margin-left:50px ;
+        margin-top:-23px ;
+        overflow: hidden;
         z-index: -1;
-        bottom: 150px;
-        left: 50px;
-        
+        bottom: 402px;
+        left: 161px;
         display: block;
     }
 
